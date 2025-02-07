@@ -30,6 +30,7 @@ pip install -r requirements.txt
 
 ### Project structure
 
+```python
 automl/
 ├── base_classifier.py      # Abstract base class for classifiers
 ├── data_preprocessor.py    # Automated data preprocessing
@@ -37,11 +38,11 @@ automl/
 ├── example_classifiers.py  # Implementation of various classifiers
 ├── auto_ml.py             # Main AutoML orchestrator
 └── example_usage.py       # Usage examples
-
+```
 
 ### Quickstart
 
-
+```
 
 from auto_ml import AutoML
 from example_classifiers import (
@@ -74,7 +75,7 @@ print(results)
 best_classifier = auto_ml.get_best_classifier(metric='f1')
 print(f"Best classifier: {best_classifier.name}")
 
-
+```
 
 ### Adding New Classifiers
 
